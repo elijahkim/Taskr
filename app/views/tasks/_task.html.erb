@@ -1,0 +1,5 @@
+<li class=<%= completed_class(task) %>>
+  <%= task.content %>
+  <%= button_to "complete", complete_task_path(task) %>
+  <%= button_to "delete", task_path(task), method: :delete %>
+</li>

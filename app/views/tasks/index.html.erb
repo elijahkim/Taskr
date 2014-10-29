@@ -1,0 +1,10 @@
+<h1><%= current_user.name %>'s Tasks</h1>
+
+<ul class="task">
+  <%= render @tasks %>
+</ul>
+
+<%= form_for @newtask do |f| %>
+  <%= f.text_field :content %>
+  <%= f.submit %>
+<% end %>
